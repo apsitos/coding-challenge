@@ -1,0 +1,22 @@
+.spam-container {
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px auto;
+	width: 900px;
+}
+
+.spam-info {
+	display: flex;
+	flex-direction: row;
+}
+
+.info-left,
+.info-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.info-left {
+	width: 400px;
+}
