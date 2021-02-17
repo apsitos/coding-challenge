@@ -4,8 +4,8 @@ module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js', 
+    path: path.resolve(__dirname, 'public')
   },
   module: {
     rules: [
@@ -27,6 +27,6 @@ module.exports = {
     ]
   },
   devServer: {
-      contentBase: path.join(__dirname, 'src')
+      contentBase: path.join(__dirname, 'public')
   }
 };
