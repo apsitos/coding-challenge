@@ -22,10 +22,10 @@ const App = () => {
               <p>Type: {item.payload.reportType}</p>
               <p>Message: {item.payload.message}</p>
             </div>
-          </div>
-          <div className="button-container">
-            <button onClick={handleBlock}>Block</button>
-            <button onClick={handleResolve}>Resolve</button>
+            <div className="button-container">
+              <button onClick={handleBlock}>Block</button>
+              <button onClick={handleResolve}>Resolve</button>
+            </div>
           </div>
         </div>
       )

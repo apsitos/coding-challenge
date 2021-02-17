@@ -8,15 +8,28 @@
 .spam-info {
 	display: flex;
 	flex-direction: row;
+	/* justify-content: space-between; */
 }
 
 .info-left,
-.info-right {
+.info-right,
+.button-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	margin-right: 40px;
 }
 
 .info-left {
 	width: 400px;
+}
+
+.info-right {
+	width: 300px;
+}
+
+button {
+	width: 100px;
+	height: 25px;
+	border-radius: 5px;
+	margin: auto;
 }
