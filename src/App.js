@@ -1,34 +1,18 @@
 import React from 'react';
 import './app.css'
 import elements from './mockData'
+import InfoCard from './InfoCard'
 
 const App = () => {
   const handleBlock = () => {
-    alert('Clicked!')
+    alert('Blocked!')
   }
 
-  const handleResolve = () => {}
+  const handleResolve = () => {alert('Resolved!')}
 
   const renderSpamReport = () => {
     return elements.map(item => {
-      return (
-        <div className="spam-container">
-          <div className="spam-info">
-            <div className="info-left">
-              <p>Id: {item.id}</p>
-              <p>State: {item.state}</p>
-            </div>
-            <div className="info-right">
-              <p>Type: {item.payload.reportType}</p>
-              <p>Message: {item.payload.message}</p>
-            </div>
-            <div className="button-container">
-              <button onClick={handleBlock}>Block</button>
-              <button onClick={handleResolve}>Resolve</button>
-            </div>
-          </div>
-        </div>
-      )
+      return <InfoCard item={item} handleBlock={handleBlock} handleResolve={handleResolve} />
     })
   }
 
