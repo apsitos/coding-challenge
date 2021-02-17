@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "serve": "nodemon server/index.js",
     "start": "webpack serve",
     "test": "test",
     "watch": "webpack --watch"
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/apsitos/coding-challenge#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
